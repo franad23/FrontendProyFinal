@@ -11,9 +11,15 @@ export const addFormApi = (form) => {
 };
 
 export const gettingFormsUser = () => {
-  return axios.get(`${urlBackend}/getFormuserform`, {
-    withCredentials: true
-  });
+  const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
+
+  const config = {
+    headers: {
+      Cookie: `token=${token}` // Agrega aquí las cookies que deseas enviar
+    }
+  };
+
+  return axios.get(`${urlBackend}/getFormuserform`, config);
 };
 
 export const gettingForm = (idform) => {
