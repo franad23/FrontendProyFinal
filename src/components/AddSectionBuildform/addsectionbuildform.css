@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #F5F5F5;
+  --colorSecundario-:#EBEBEB;
+  --colorTerciario-:#d0d0d0;
+  --ColorLetras-:#1F1F1F;
+  --ColorRespaldo-: #4A9659;
+  --ColorRespaldoSecundario-:#E26D5C;
+  --ColorRespaldoTerciario-:#77547b;
+  --Font-: 'Montserrat', sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+
+.addsectionbuildMainSection {
+  border-radius: 0px 10px 10px 0px;
+  border-left: solid 20px var(--ColorRespaldoTerciario-);
+  border-top: transparent 1px solid;
+  border-right: transparent 1px solid;
+  border-bottom: transparent 1px solid;
+  width: 100%;
+  /* min-height: 150px; */
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  margin-top: 10px;
+}
+.addsectionbuildMainSection:hover {
+  border-top: var(--ColorRespaldoTerciario-) 1px solid;
+  border-right: var(--ColorRespaldoTerciario-) 1px solid;
+  border-bottom: var(--ColorRespaldoTerciario-) 1px solid;
+}
+.headerAddSectionForm {
+  width: 80%;
+}
+.questionsAddSectionFormContainer{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.showSection {
+  opacity: 1;
+  max-height: 1000px; /* Ajusta la altura máxima deseada para mostrar la sección */
+  visibility: visible;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.notShowOption {
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+  overflow: hidden;
+}
+.chooseOptionContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 80%;
+}
+.titleOpcion {
+  margin-bottom: 0px;
+  font-family: var(--Font-);
+  font-size: 1.2rem;
+  color: var(--ColorLetras-);
+}
+.footerSection {
+  width: 90%;
+}
+.imgUrlContainer{
+  width: 100%;
+  position: relative;
+}
+.imgUrlContainer img {
+  width: 100%;
+
+}
+.showSectionImgUrl {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.iconDeleteImg{
+  position: absolute;
+  font-size: 20px;
+  top: -10px;
+  right: -10px;
+  color: var(--ColorLetras-);
+  border-radius: 100%;
+  background-color: var(--colorPrincipal-);
+  padding: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  border: 1px solid transparent;
+}
+.iconDeleteImg:hover{
+  cursor: pointer;
+  border: 1px solid var(--ColorRespaldoSecundario-);
+}
+
+/* ----------------MEDIAQUERIES----------------- */
+
+@media (max-width: 1024px) {
+  .headerAddSectionForm {
+    width: 90%;
+  }
+  .questionsAddSectionFormContainer {
+    width: 90%;
+
+  }
+}

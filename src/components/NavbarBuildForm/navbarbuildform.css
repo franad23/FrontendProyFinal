@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #f5f5f5;
+  --colorSecundario-: #ebebeb;
+  --colorTerciario-: #d0d0d0;
+  --ColorLetras-: #1f1f1f;
+  --ColorRespaldo-: #4a9659;
+  --ColorRespaldoSecundario-: #e26d5c;
+  --Font-: "Montserrat", sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+.navbarBuildFormMainContainer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  font-family: var(--Font-);
+  background-color: var(--colorSecundario-);
+  border-bottom: 1px solid var(--colorTerciario-);
+}
+.iconsNavbar {
+  font-size: 20px;
+  color: var(--ColorLetras-);
+  border-radius: 100%;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+.iconsNavbar:hover {
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: var(--ColorRespaldoSecundario-);
+  padding: 5px;
+  color: var(--colorPrincipal-);
+  transition: 0.2s;
+}
+.iconsUser {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.enviarFormBtn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--ColorRespaldoSecundario-);
+}
+.enviarFormBtn:hover {
+  background-color: var(--ColorRespaldoSecundario-);
+  color: var(--colorPrincipal-);
+  transition: 0.2s;
+}
+.notShowLink {
+  display: none;
+}

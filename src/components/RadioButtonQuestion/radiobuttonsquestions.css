@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #F5F5F5;
+  --colorSecundario-:#EBEBEB;
+  --colorTerciario-:#d0d0d0;
+  --ColorLetras-:#1F1F1F;
+  --ColorRespaldo-: #4A9659;
+  --ColorRespaldoSecundario-:#E26D5C;
+  --Font-: 'Montserrat', sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+.radioBtnsMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btnsAgregar {
+  display: flex;
+  gap: 5px;
+}
+.btnAgregar {
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.radioBtnOptionContainer {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.iconCross {
+  cursor: pointer;
+  margin-left: 5px;
+  color: gray;
+  width: 10px;
+}
+.textoLibreContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.btnsAgregarContainer {
+  font-family: var(--Font-);
+  padding: 5px;
+}
+
+/* ----------------MEDIAQUERIES----------------- */
+
+@media (max-width: 1024px) {
+  .radioBtnOptionContainer {
+    width: 100%;
+  }
+  .textoLibreContainer {
+    width: 100%;
+  }
+}

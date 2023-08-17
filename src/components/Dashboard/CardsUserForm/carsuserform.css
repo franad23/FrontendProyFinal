@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #F5F5F5;
+  --colorSecundario-:#EBEBEB;
+  --colorTerciario-:#d0d0d0;
+  --ColorLetras-:#1F1F1F;
+  --ColorRespaldo-: #4A9659;
+  --ColorRespaldoSecundario-:#E26D5C;
+  --ColorRespaldoTerciario-:#77547b;
+  --Font-: 'Montserrat', sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+.cardUserFormMainContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  position: relative;
+}
+.cardUserFormMainContainer:hover {
+  cursor: pointer;
+  border: 1px solid var(--ColorRespaldoTerciario-);
+}
+.spanCardsContainer {
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--colorTerciario-);
+}
+.spanCards {
+  font-family: var(--Font-);
+  font-size: 0.9rem;
+}
+.imgCardContainer {
+  height: 50%;
+}
+.imgCard {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.infocardContainer {
+  height: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.titleCardContainer {
+  width: 100%;
+  height: 55%;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.titleCard {
+  font-family: var(--Font-);
+  font-size: 1.2rem;
+}
+.dotsIconCard {
+  font-size: 25px;
+  bottom: 10px;
+  right: 10px;
+  color: var(--ColorLetras-);
+  position: absolute;
+  padding: 10px;
+  z-index: 2;
+}
+.btnCardsDropdown {
+  background-color: transparent;
+  border: none;
+  font-family: var(--Font-);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+}
+.qrcodeCard {
+  /* border: 1px solid red; */
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+.qrcodeContainer {
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+.deleteBodyModal {
+  font-family: var(--Font-);
+  font-size: 1rem;
+}
