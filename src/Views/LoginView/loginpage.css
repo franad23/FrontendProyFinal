@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #F5F5F5;
+  --colorSecundario-:#EBEBEB;
+  --colorTerciario-:#d0d0d0;
+  --ColorLetras-:#1F1F1F;
+  --ColorRespaldo-: #4A9659;
+  --ColorRespaldoSecundario-:#E26D5C;
+  --ColorRespaldoTerciario-:#77547b;
+  --Font-: 'Montserrat', sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+.loginPageMainContainer {
+  height: 100vh;
+  background-color: var(--colorPrincipal-);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginContainer {
+  border-radius: 10px;
+  height: 500px;
+  width: 30%;
+  border: var(--ColorRespaldoTerciario-)1px solid;
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 30px;
+  gap: 50px;
+}
+.loginLabels {
+  font-family: var(--Font-);
+  font-size: 1rem;
+}
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* border: 1px solid red; */
+}
+.btnLoginContainer {
+  display: flex;
+  justify-content: end;
+}
+.btnLogin {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--ColorRespaldoSecundario-);
+  background-color: var(--ColorRespaldoSecundario-);
+  font-family: var(--Font-);
+  color: var(--colorPrincipal-);
+}
+.btnLogin:hover {
+  border: 1px solid var(--colorSecundario-);
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+}
+.notRegisterContainer {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+.notRegisterText {
+  font-family: var(--Font-);
+  font-size: 1rem;
+}
+.errorLoginContainer {
+  display: flex;
+  justify-content: end;
+}
+.errorLogin {
+  color: var(--ColorLetras-);
+  font-size: 1rem;
+  color: red;
+  font-family: var(--Font-);
+}
+
+/* --------------Mediaqueries----------------- */
+
+@media (max-width: 426px) {
+  .loginContainer {
+    width: 80%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px)  {
+  .loginContainer {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .loginContainer {
+    width: 50%;
+  }
+}
