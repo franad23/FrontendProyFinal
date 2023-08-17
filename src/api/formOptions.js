@@ -12,7 +12,7 @@ export const addFormApi = (form) => {
 
 export const gettingForm = async (idform) => {
   const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
-
+  console.log(token)
   const config = {
     withCredentials: true,
     headers: {
