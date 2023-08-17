@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlBackend = 'https://backendproyfinalrc.onrender.com';
+const urlBackend = 'https://backendproyfinalrc.onrender.com/';
 
 export const addFormApi = (form) => {
 
