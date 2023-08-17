@@ -59,7 +59,7 @@ export const AuthProvider = ({children}) => {
 
   useEffect(() => {
     const verifyTokenFromBack = async () => {
-      const token = cookies.token;
+      const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
     if (token) {
       try {
         const res = await verifyToken(token);
