@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlBackend = 'https://backendproyfinalrc.onrender.com';
+const urlBackend = 'https://backendproyfinalrc.onrender.com/api';
 
 export const verifyToken = () => {
   const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
