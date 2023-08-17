@@ -39,6 +39,7 @@ export const AuthProvider = ({children}) => {
   const signin = async (user) => {
     try {
       const res = await loginUser(user);
+      console.log("Probando");
       console.log(res);
       setIsAuth(true);
       setUser(res.data.user);
