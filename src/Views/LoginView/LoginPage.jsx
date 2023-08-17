@@ -85,6 +85,8 @@ function LoginPage() {
     else {
       try {
         const res = await signin(userLogin);
+        const token = res;
+        document.cookie = `token=${token}; SameSite=None; Secure`;
         navigate(`/userdashboard`)
       } catch (error) {
         setErrorLoginCounter(errorLoginCounter + 1);
