@@ -10,17 +10,19 @@ export const addFormApi = (form) => {
   });
 };
 
-export const gettingFormsUser = () => {
+export const gettingForm = async (idform) => {
   const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
 
   const config = {
+    withCredentials: true,
     headers: {
-      Cookie: `token=${token}` // Agrega aquí las cookies que deseas enviar
+      Cookie: `token=${token}`
     }
   };
 
-  return axios.get(`${urlBackend}/getFormuserform`, config);
+  return axios.get(`${urlBackend}/getFormuserform/${idform}`, config);
 };
+
 
 export const gettingForm = (idform) => {
   return axios.get(`${urlBackend}/getFormuserform/${idform}`, {
