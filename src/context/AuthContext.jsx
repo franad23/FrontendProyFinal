@@ -40,8 +40,8 @@ export const AuthProvider = ({children}) => {
     try {
       const res = await loginUser(user);
       setIsAuth(true);
-      setUser(res.data);
-      return (res.data);
+      setUser(res.data.user);
+      return (res.data.token);
     } catch (error) {
       console.log(error);
       throw error;
