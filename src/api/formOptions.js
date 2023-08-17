@@ -13,14 +13,20 @@ export const addFormApi = (form) => {
 export const gettingForm = async (idform) => {
   const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
 
+  const headers = new Headers({
+    'Cookie': `token=${token}`
+  });
+
   const config = {
-    withCredentials: true,
-    headers: {
-      Cookie: `token=${token}`
-    }
+    method: 'GET',
+    headers: headers,
+    credentials: 'include'
   };
 
-  return axios.get(`${urlBackend}/getFormuserform/${idform}`, config);
+  const response = await fetch(`${urlBackend}/getFormuserform/${idform}`, config);
+  const data = await response.json();
+
+  return data;
 };
 
 
