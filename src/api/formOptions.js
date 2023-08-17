@@ -16,7 +16,7 @@ export const gettingForm = async (idform) => {
   const config = {
     withCredentials: true,
     headers: {
-      cookie: `token=${token}`
+      cookies: `token=${token}`
     }
   };
 
