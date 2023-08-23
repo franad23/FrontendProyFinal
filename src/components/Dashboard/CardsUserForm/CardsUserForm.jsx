@@ -114,7 +114,7 @@ function CardsUserForm(props) {
               readOnlyInput={true}
               textSize="0.9rem"
               placeholder="Link"
-              maxlength={100}
+              maxlength={1000}
               row={1}
               showIcons = {false}
               // tohandle = {(data) => setMainTitle(data)}
