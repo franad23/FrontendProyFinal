@@ -32,3 +32,8 @@ Este proyecto está desarrollado utilizando ReactJS.
 - **[react-router-dom](https://www.npmjs.com/package/react-router-dom):** Enrutamiento para aplicaciones React.
 - **[resend](https://www.npmjs.com/package/resend):** Librería para enviar correos electrónicos de manera eficiente.
 - **[uuid](https://www.npmjs.com/package/uuid):** Generador de identificadores únicos.
+
+- ## Deploy Final
+
+El proyecto ha sido desplegado y se puede acceder en: [https://echosurvey.vercel.app/](https://echosurvey.vercel.app/)
+
