@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #F5F5F5;
+  --colorSecundario-:#EBEBEB;
+  --colorTerciario-:#d0d0d0;
+  --ColorLetras-:#1F1F1F;
+  --ColorRespaldo-: #4A9659;
+  --ColorRespaldoSecundario-:#E26D5C;
+  --ColorRespaldoTerciario-:#77547b;
+  --Font-: 'Montserrat', sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+.responseCardContainer {
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  border: 1px solid transparent;
+}
+.responseCardContainer:hover {
+  cursor: pointer;
+  border: 1px solid var(--ColorRespaldoTerciario-);
+}
+.titleCardContainer{
+  display: flex;
+  gap: 5px;
+}
+.titleCardResponse{
+  font-size: 1.2rem;
+  font-family: var(--Font-);
+}
+.createdAtDateContainer {
+  display: flex;
+  justify-content: end;
+}
+.liModalCards {
+  font-family: var(--Font-);
+}

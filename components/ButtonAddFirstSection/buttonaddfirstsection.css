@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorPrincipal-: #f5f5f5;
+  --colorSecundario-: #ebebeb;
+  --colorTerciario-: #d0d0d0;
+  --ColorLetras-: #1f1f1f;
+  --ColorRespaldo-: #4a9659;
+  --ColorRespaldoSecundario-: #e26d5c;
+  --Font-: "Montserrat", sans-serif;
+  /* Recordar que fontweigth es de 300 y 600; */
+  background-color: var(--colorPrincipal-);
+}
+.addFirstSectionMaincontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.iconAddfirstSection:hover {
+  border: var(--ColorRespaldoTerciario-) 1px solid;
+}
+
+.iconAddfirstSection {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  border: transparent 1px solid;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(185,185,185,1);
+}
