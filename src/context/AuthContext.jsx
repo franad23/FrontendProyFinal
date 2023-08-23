@@ -39,7 +39,6 @@ export const AuthProvider = ({children}) => {
   const signin = async (user) => {
     try {
       const res = await loginUser(user);
-      console.log("Probando");
       console.log(res);
       setIsAuth(true);
       setUser(res.data.user);
@@ -59,7 +58,7 @@ export const AuthProvider = ({children}) => {
 
   useEffect(() => {
     const verifyTokenFromBack = async () => {
-      const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
+      const token = cookies.token;
     if (token) {
       try {
         const res = await verifyToken(token);
