@@ -31,7 +31,6 @@ function UserDrawer(props) {
       localStorage.removeItem('welcomeMessage');
       setTimeout( async () => {
         const res = await logout();
-        console.log("Aver");
         navigate(`/login`);
       }, 1000)
     } catch (error) {

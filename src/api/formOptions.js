@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlBackend = 'https://backendproyfinalrc.onrender.com/api';
+const urlBackend = 'http://localhost:3000/api';
 
 export const addFormApi = (form) => {
 
@@ -10,25 +10,11 @@ export const addFormApi = (form) => {
   });
 };
 
-export const gettingForm = async (idform) => {
-  const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('token=')).split('=')[1];
-
-  const headers = new Headers({
-    'Cookie': `token=${token}`
+export const gettingFormsUser = () => {
+  return axios.get(`${urlBackend}/getFormuserform`, {
+    withCredentials: true
   });
-
-  const config = {
-    method: 'GET',
-    headers: headers,
-    credentials: 'include'
-  };
-
-  const response = await fetch(`${urlBackend}/getFormuserform/${idform}`, config);
-  const data = await response.json();
-
-  return data;
 };
-
 
 export const gettingForm = (idform) => {
   return axios.get(`${urlBackend}/getFormuserform/${idform}`, {
