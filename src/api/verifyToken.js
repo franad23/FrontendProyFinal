@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlBackend = 'http://localhost:3000/api';
+const urlBackend = 'https://backendproyfinalrc.onrender.com/api';
 
 export const verifyToken = () => {
   return axios.get(`${urlBackend}/verify`, {
