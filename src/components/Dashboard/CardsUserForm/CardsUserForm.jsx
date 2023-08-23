@@ -70,7 +70,7 @@ function CardsUserForm(props) {
   }
 
   const handleClickCopyLink = () => {
-    const linkToCopy = `https://echosurvey.vercel.app/final-form/${infoToCards._id}/`;
+    const linkToCopy = `https://echosurvey.vercel.app/final-form/${infoToCards._id}`;
     navigator.clipboard.writeText(linkToCopy);
     setIsModalOpenLink(false);
     toast.success('Link copiado!')
@@ -118,7 +118,7 @@ function CardsUserForm(props) {
               row={1}
               showIcons = {false}
               // tohandle = {(data) => setMainTitle(data)}
-              value = {`https://echosurvey.vercel.app/final-form/${infoToCards._id}/`}
+              value = {`https://echosurvey.vercel.app/final-form/${infoToCards._id}`}
             />
       </Modal>
       <Modal title="Confirmar Eliminacion del formulario" 
