@@ -40,7 +40,6 @@ function FinalFormToResponse() {
       const idform = id;
       const res = await postUserForm(idform, data);
       setIsFormSended(true);
-      console.log(res);
     } catch (error) {
       console.log(error);
     }
