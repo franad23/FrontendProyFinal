@@ -43,7 +43,6 @@ function Userdashboard() {
     gettingUserForms();
     welcomeMessage();
   },[])
-  // console.log(userForms);
   const handleLoadingCards = () => {
     setIsLoading(true);
     gettingUserForms();
