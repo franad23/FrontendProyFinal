@@ -25,7 +25,6 @@ function CardsUserForm(props) {
     try {
       const id = infoToCards._id;
       const res = await deleteForm(id);
-      console.log(res);
       props.tohandleLoading()
     } catch (error) {
       console.log(error);
