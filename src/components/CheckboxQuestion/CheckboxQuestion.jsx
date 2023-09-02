@@ -74,8 +74,6 @@ function CheckboxQuestion(props) {
     return checkboxOptionsToRender.map(option => {
       const value = option.value;
       const answer = option.answer || '';
-  
-      // console.log(value);
       return (
         <div key={value} className='checkboxOptionContainer'>
           <Checkbox checked={value}></Checkbox>
