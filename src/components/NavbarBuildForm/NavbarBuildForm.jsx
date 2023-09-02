@@ -23,7 +23,7 @@ function NavbarBuildForm(props) {
   const [isModalOpenLink, setIsModalOpenLink] = useState(false);
 
   const handleClickCopyLink = () => {
-    const linkToCopy = `http://localhost:5173/final-form/${id}/`;
+    const linkToCopy = `https://echosurvey.vercel.app/final-form/${id}/`;
     navigator.clipboard.writeText(linkToCopy);
     setIsModalOpenLink(false);
     toast.success("Link copiado!");
