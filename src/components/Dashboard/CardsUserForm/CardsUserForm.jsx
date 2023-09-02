@@ -114,7 +114,7 @@ function CardsUserForm(props) {
               readOnlyInput={true}
               textSize="0.9rem"
               placeholder="Link"
-              maxlength={100}
+              maxlength={200}
               row={1}
               showIcons = {false}
               value = {`https://echosurvey.vercel.app/final-form/${infoToCards._id}`}
