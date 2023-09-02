@@ -39,7 +39,6 @@ export const AuthProvider = ({children}) => {
   const signin = async (user) => {
     try {
       const res = await loginUser(user);
-      console.log(res);
       setIsAuth(true);
       setUser(res.data.user);
       return (res.data.token);
@@ -68,7 +67,6 @@ export const AuthProvider = ({children}) => {
           setLoading(false);
           return;
         }
-        // console.log(res.data);
         setIsAuth(true);
         setUser(res.data);
         setLoading(false);
