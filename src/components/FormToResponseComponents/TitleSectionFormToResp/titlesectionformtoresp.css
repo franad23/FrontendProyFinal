@@ -55,6 +55,7 @@
 }
 .titleFormToResp {
   font-size: 2rem;
+  overflow-wrap: break-word;
 }
 .descriptionFormToResp{
   font-size: 1rem;
