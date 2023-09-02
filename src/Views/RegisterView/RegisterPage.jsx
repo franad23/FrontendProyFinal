@@ -166,8 +166,6 @@ function RegisterPage() {
       }
     }
   };
-
-  // console.log(userRegister);
   return (
     <div className="registerPageMainContainer">
       <div>
