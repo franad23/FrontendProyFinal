@@ -25,7 +25,6 @@ function RecoveryPassword() {
 
   const handleRecoveryPassword = async () => {
     try {
-      console.log("Pasamos");
       const res = await sendMailTorecoveryPass(emailToRecovery);
       toast.success("Mail enviado!");
       setTimeout(() => {
