@@ -114,10 +114,9 @@ function CardsUserForm(props) {
               readOnlyInput={true}
               textSize="0.9rem"
               placeholder="Link"
-              maxlength={1000}
+              maxlength={100}
               row={1}
               showIcons = {false}
-              // tohandle = {(data) => setMainTitle(data)}
               value = {`https://echosurvey.vercel.app/final-form/${infoToCards._id}`}
             />
       </Modal>
