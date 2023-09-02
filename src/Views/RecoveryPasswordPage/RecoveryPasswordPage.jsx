@@ -78,7 +78,6 @@ function RecoveryPasswordPage() {
       toast.error("Tienes campos mal completados");
       return;
     }
-    console.log(passwordChanged);
     if (passwordChanged.password == null) {
       toast.error("Tienes campos vacios");
       return;
