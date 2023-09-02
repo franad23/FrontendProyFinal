@@ -59,7 +59,7 @@ function NavbarBuildForm(props) {
           maxlength={100}
           row={1}
           showIcons={false}
-          value={`http://localhost:5173/final-form/${id}/`}
+          value={`https://echosurvey.vercel.app/final-form/${id}/`}
         />
       </Modal>
       <div className="navbarBuildFormMainContainer">
