@@ -65,6 +65,9 @@ function InputText(props) {
             fontStyle: fontStyle,
             resize: "none", 
             overflowY: "hidden", 
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis'
           }}
           rows={props.row} 
           placeholder={props.placeholder}
