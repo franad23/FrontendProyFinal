@@ -64,6 +64,12 @@
 
 /* ----------Mediaqueries----------- */
 @media (max-width: 426px) {
+  .cardsContainer {
+    padding: 0;
+  }
+  .titleHeaderCards {
+    font-size: 1.5rem;
+  }
   .userFormsContainer {
     width: 90%;
   }
