@@ -102,3 +102,12 @@
   font-family: var(--Font-);
   font-size: 1rem;
 }
+/* ----------Mediaqueries----------- */
+@media (max-width: 426px) {
+  .cardUserFormMainContainer {
+    width: 100%;
+  }
+  .spanCards {
+    font-size: 0.8rem;
+  }
+}
