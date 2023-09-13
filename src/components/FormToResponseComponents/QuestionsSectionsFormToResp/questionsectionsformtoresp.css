@@ -53,6 +53,9 @@
 }
 .titleSectionFormToResp{ 
   font-size: 1.5rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
 }
 .imgContainerQuesToResp {
   width: 100%;
